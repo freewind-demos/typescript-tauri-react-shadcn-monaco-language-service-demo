@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    // shadcn CLI 与编辑器都按 @/ 解析，必须与 vite.config.ts 的 alias 保持一致
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
